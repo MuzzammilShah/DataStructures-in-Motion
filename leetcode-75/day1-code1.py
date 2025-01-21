@@ -35,3 +35,38 @@
 
 # 1 <= word1.length, word2.length <= 100
 # word1 and word2 consist of lowercase English letters.
+
+#=====SOLUTION=====
+
+def merge(word1, word2):
+
+    final = []
+    i, j = 0, 0
+
+    while i<len(word1) and j<len(word2):
+        final.append(word1[i])
+        final.append(word2[j])
+        i += 1
+        j += 1
+
+    final.extend(word1[i:])
+    final.extend(word2[j:])
+
+    #FOR LOOP IMPLEMENTATION
+    # max_len = max(len(word1), len(word2))
+    # for i in range(max_len):
+    #     if i<len(word1):
+    #         final.append(word1[i])
+    #     if i<len(word2):
+    #         final.append(word2[i])
+
+    return ''.join(final)
+
+def main():
+    input1 = input("Enter first word: ")
+    input2 = input("Enter second word: ")
+    output = merge(input1, input2)
+    print(f"Result: {output}")
+
+if __name__ == '__main__':
+    main()
