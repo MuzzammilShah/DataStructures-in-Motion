@@ -23,3 +23,26 @@
 # -1000 <= arr[i] <= 1000
 
 #=====SOLUTION=====
+
+from collections import defaultdict
+
+def unique_num(nums):
+
+    hashtable = defaultdict(int)
+
+    for num in nums:
+        hashtable[num] += 1
+
+    settable = set(hashtable.values())
+
+    return len(hashtable.values()) == len(settable)
+
+
+def main():
+
+    inputnums = list(map(int, input("Enter list value: ").split()))
+    result = unique_num(inputnums)
+    print(f"Result: {result}")
+
+if __name__ == "__main__":
+    main()
