@@ -52,3 +52,14 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# NOTE
+# ❌ No division allowed.
+# So you can’t do:
+
+# ```
+# total_product = product(nums)
+# answer[i] = total_product // nums[i]
+# ```
+# Instead, the trick is to use prefix and suffix products.

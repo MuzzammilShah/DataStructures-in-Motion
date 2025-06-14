@@ -54,6 +54,12 @@ def check_greater(candies, extracandies):
 
 def main():
     input1 = list(map(int, input("Enter a list of values: ").split())) #basically converts 2 3 4 5 to [2, 3, 4, 5]
+
+    # import re
+    # user = input("Enter a list of values: ")
+    # input1 = re.split(r'[\s,]+', input.strip()) #To handle all the different input cases
+    # finalinput1 = list(map(int, input1))
+
     input2 = int(input("Enter number of extra candies: "))
     result = check_greater(input1, input2)
     print(result)

@@ -43,22 +43,22 @@ def merge(word1, word2):
     final = []
     i, j = 0, 0
 
-    while i<len(word1) and j<len(word2):
-        final.append(word1[i])
-        final.append(word2[j])
-        i += 1
-        j += 1
+    # while i<len(word1) and j<len(word2):
+    #     final.append(word1[i])
+    #     final.append(word2[j])
+    #     i += 1
+    #     j += 1
 
-    final.extend(word1[i:])
-    final.extend(word2[j:])
+    # final.extend(word1[i:])
+    # final.extend(word2[j:])
 
-    #FOR LOOP IMPLEMENTATION
-    # max_len = max(len(word1), len(word2))
-    # for i in range(max_len):
-    #     if i<len(word1):
-    #         final.append(word1[i])
-    #     if i<len(word2):
-    #         final.append(word2[i])
+    # FOR_LOOP_IMPLEMENTATION
+    max_len = max(len(word1), len(word2))
+    for i in range(max_len):
+        if i<len(word1):
+            final.append(word1[i])
+        if i<len(word2):
+            final.append(word2[i])
 
     return ''.join(final)
 
