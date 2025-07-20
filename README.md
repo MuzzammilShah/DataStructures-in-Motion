@@ -1,5 +1,1 @@
-## **👨🏻‍💻Data Structure and Algorithms (DSA)**
-&nbsp;
-
-**✍🏻Notes:**
-Programs have been written in **Python**. They are also checked and executed.
+<a href="https://leetcode.com/MuzzammilShah/" target="blank"><img src="https://img.shields.io/badge/-LeetCode-FFA116?style=for-the-badge&logo=LeetCode&logoColor=black" /></a>
